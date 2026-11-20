@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.cabecalho {
+  background-color: #ffffff;
+  border-bottom: 1px solid #cbd5e1;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.cabecalho p {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+.conteudo {
+  padding: 32px 0;
+}
+
+.grade-produtos {
+  display: flex;
+  justify-content:space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2%;
+  justify-content: space-between;
+}
+
+.card-imagem {
+  height: 150px;
+  background-color: #e2e8f0;
+  font-size: 48px;
+  text-align: center;
+  line-height: 150px;
+}
+
+.card-conteudo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+}
+
+.card-texto {
+  flex: 1;
+}
+
+.card-titulo {
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.card-descricao {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.card-rodape {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 12px;
+}
+
+.card-preco {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.btn-comprar {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-comprar:hover {
+  background-color: #1d4ed8;
+}
+
+.rodape {
+  background-color: #ffffff;
+  border-top: 1px solid #cbd5e1;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+@media(min-width:640px) {
+  .card {
+    width: 45%;
+  }
+}
+@media(min-width:1024px) {
+  .card {
+    width: 30%;
+  }
+}
